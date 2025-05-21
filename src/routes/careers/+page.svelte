@@ -121,34 +121,31 @@
 	];
 
 	const employeeTestimonials = [
-		{
-			name: "Michael Chen",
-			position: "Senior Developer",
-			company: "Engineering Team",
-			quote:
-				"Working here has given me the opportunity to tackle challenging problems while maintaining a healthy work-life balance. The team culture is supportive and collaborative.",
-			image:
-				"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "Priya Sharma",
-			position: "Product Designer",
-			company: "Design Team",
-			quote:
-				"The creative freedom and opportunity to influence product decisions makes this the best place I've ever worked. I'm constantly learning and growing.",
-			image:
-				"https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "Marcus Johnson",
-			position: "Marketing Lead",
-			company: "Marketing Team",
-			quote:
-				"I joined three years ago and have grown tremendously. The leadership truly invests in your development and the work environment is both challenging and supportive.",
-			image:
-				"https://images.unsplash.com/photo-1531384441138-2736e62e0919?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		}
-	];
+  {
+    name: "Wei Chen",
+    position: "AI engineer",
+    company: "Engineering Team",
+    quote:
+      "From our first all-hands hackathon where I pitched a feature, I knew Headscout AI valued every voice. Building the AI-powered outreach model alongside recruiters now automates 85% of outreach tasks and cuts candidate screening time by 40%.",
+    image: "/generated/image-a-candid-headshot-of-an-asian-male-engin.webp"
+  },
+  {
+    name: "Amina Bakare",
+    position: "Senior product manager",
+    company: "Product Team",
+    quote:
+      "At Headscout AI, when I learned recruiters were spending half their day toggling between spreadsheets, I spearheaded our unified sourcing and tracking dashboard. In six months it reduced time-to-hire by 25% and I coached three new team members on end-to-end product strategy. Leading this project has been the fastest growth I’ve experienced in my career.",
+    image: "/generated/image-a-professional-portrait-of-a-black-femal.webp"
+  },
+  {
+    name: "Rowan Hayes (they/them)",
+    position: "Customer success specialist",
+    company: "Support Team",
+    quote:
+      "Joining as a support specialist, I immediately appreciated the flexible remote-first setup and open communication channels. Building our automated interview scheduler saved recruiters 20 hours a week, and I set my own hours while collaborating with engineering to fine-tune it. The trust and autonomy here keep me motivated every day.",
+    image: "/generated/image-a-relaxed-and-confident-white-nonbinary-.webp"
+  }
+];
 
 	const processSteps = [
 		{
@@ -191,18 +188,21 @@
 <!-- Hero Section -->
 
 <SecondaryHero
-	title="Join our team of innovators"
-	subtitle="We're looking for passionate people to help us build the future of digital experiences. Discover your next opportunity with us."
+  title="Engineers and designers, transform hiring"
+  subtitle="Work flexibly with an AI-native team and cut hiring time. Thrive alongside supportive peers, shape the future of the hiring industry, and make meaningful impact."
+  imageSrc="/generated/image-a-diverse-team-collaborating-in-a-modern.webp"
 />
 
 <!-- Why Join Us Section -->
 <section class={SECTION_BASE_CLASSES}>
-	<SectionHeader title="Why join us?" subtitle="Build your career while making an impact" />
+	<SectionHeader title="Why join us?" subtitle="Architect our AI engine that slashes hiring time from months to weeks by automating 85% of screening tasks and delivering smarter candidate experiences." />
 
-	<div class="mt-16 grid gap-4 md:grid-cols-3">
-		{#each benefits as benefit}
-			<Card {...benefit} />
-		{/each}
+	<div class="prose max-w-3xl mx-auto text-lg mt-10 mb-10">
+		<ul class="list-disc pl-5">
+			<li>Tackle the hardest talent gaps at top-tier startups, designing solutions that connect engineering, product, and executive leaders with world-class candidates.</li>
+			<li>Shape our product vision and equity upside—own 0.5–1% equity, drive strategy alongside founder Grace Juba and advisor Jon Holland, and scale our seed-stage startup backed by top-tier VCs.</li>
+			<li>Accelerate your career in a funded remote-first environment by joining our 15-person team, enjoying flexible work, rapid role growth, and direct impact as we bring our early-access recruiting platform to market.</li>
+		</ul>
 	</div>
 </section>
 
