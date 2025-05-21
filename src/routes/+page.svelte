@@ -7,16 +7,50 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="/sample.png"
-	generating
+<CustomerCardHero
+  centered={true}
+  title="Turn hiring chaos into your secret weapon"
+  subtitle="See why startups trust Headscout to speed hiring and ditch tedious admin."
+  customers={[
+    {
+      name: "Ayesha Kamal",
+      position: "CTO, SignalBeta",
+      imageSrc: "/generated/image-a-female-cto-in-a-modern-office-setting-.webp",
+      quote: "Headscout zeroed in on engineers who met our toughest technical bar, breaking our search deadlock."
+    },
+    {
+      name: "Laura Chen",
+      position: "VP of engineering, Nova Robotics",
+      imageSrc: "/generated/image-a-female-talent-partner-in-a-coworking-s.webp",
+      quote: "Headscout surfaced engineers whose expertise and values aligned perfectly with our team."
+    },
+    {
+      name: "Martin Blake",
+      position: "talent partner, Finchloop",
+      imageSrc: "/generated/image-a-male-vp-of-engineering-in-a-startup-of.webp",
+      quote: "With every candidate and step tracked in a single platform, we stayed aligned and made decisions faster."
+    },
+    {
+      name: "Adam Reyes",
+      position: "founder, Metricly",
+      imageSrc: "/generated/image-a-male-founder-in-a-startup-environment-.webp",
+      quote: "By automating outreach and screening, Headscout freed me to focus on our product roadmap."
+    }
+  ]}
 />
-<LogoScroller label="" generating />
+
+<LogoScroller
+	label="Trusted by industry leaders"
+	logoUrls={[
+		'https://logo.clearbit.com/databricks.com',
+		'https://logo.clearbit.com/openai.com',
+		'https://logo.clearbit.com/flexport.com',
+		'https://logo.clearbit.com/brex.com'
+	]}
+/>
 
 <Summary
 	generating
